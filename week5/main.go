@@ -22,11 +22,11 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-
+	var grade string
 	if inputScore >= 90 {
 		grade := "A grade!"
 	} else {
 		grade := "BCDE grade~"
 	}
-
+	fmt.Println("You got" + grade)
 }
