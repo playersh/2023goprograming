@@ -1,14 +1,23 @@
 package main
 
 import (
+	"bufio"
 	"fmt"
-	"time"
+	"log"
+	"os"
 )
 
 func main() {
-	var now time.Time = time.Now()
-	year := now.Year()
-	var month string = now.Month().String()
-	fmt.Println(year, month, now.Hour(), now.Minute(), now.Second())
+	fmt.Print("input score :")
+	reader := bufio.NewReader(os.Stdin)
+	inputScore, err = reader.ReadString('\n')
+	if err != nil {
+		log.Fatal(err)
+	}
+	if inputScore >= 90 {
+		grade := "A grade!"
+	} else {
+		grade := "BCDE grade~"
+	}
 
 }
